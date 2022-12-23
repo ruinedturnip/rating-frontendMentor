@@ -15,39 +15,41 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
-    <div class="container" id="front">
-      <img src="/images/icon-star.svg" alt="star" class="front__img" />
-      <h1 class="container__header">How did we do?</h1>
-      <p class="container__text">
-        Please let us know how we did with your support request. All feedback is
-        appreciated to help us improve our offering!
-      </p>
-      <div class="container__rating-box">
-        <button class="circle dataCircle" data-num="1">1</button>
-        <button class="circle dataCircle" data-num="2">2</button>
-        <button class="circle dataCircle" data-num="3">3</button>
-        <button class="circle dataCircle" data-num="4">4</button>
-        <button class="circle dataCircle" data-num="5">5</button>
+    <main>
+      <div class="container" id="front">
+        <img src="/images/icon-star.svg" alt="star" class="front__img" />
+        <h1 class="container__header">How did we do?</h1>
+        <p class="container__text">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="container__rating-box">
+          <button class="circle dataCircle" data-num="1">1</button>
+          <button class="circle dataCircle" data-num="2">2</button>
+          <button class="circle dataCircle" data-num="3">3</button>
+          <button class="circle dataCircle" data-num="4">4</button>
+          <button class="circle dataCircle" data-num="5">5</button>
+        </div>
+
+        <button id="submit" class="container__btn">Submit</button>
       </div>
 
-      <button id="submit" class="container__btn">Submit</button>
-    </div>
+      <div class="container hide container__back" id="back">
+        <img
+          src="/images/illustration-thank-you.svg"
+          alt="Thank you illustration"
+          class="back__illustration"
+        />
+        <span id="backText">You selected 4 out of 5</span>
+        <h1 class="back__title">Thank you!</h1>
+        <p class="back__text">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+        <button id="returnBtn" class="return__btn">&#8249;</button>
+      </div>
 
-    <div class="container hide container__back" id="back">
-      <img
-        src="/images/illustration-thank-you.svg"
-        alt="Thank you illustration"
-        class="back__illustration"
-      />
-      <span id="backText">You selected 4 out of 5</span>
-      <h1 class="back__title">Thank you!</h1>
-      <p class="back__text">
-        We appreciate you taking the time to give a rating. If you ever need
-        more support, don’t hesitate to get in touch!
-      </p>
-      <button id="returnBtn" class="return__btn">&#8249;</button>
-    </div>
-
-    <script defer src="script.js"></script>
+      <script defer src="script.js"></script>
+    </main>
   </body>
 </html>
