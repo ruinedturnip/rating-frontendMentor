@@ -2,7 +2,7 @@ console.log("Hello world");
 
 const front = document.getElementById("front");
 const back = document.getElementById("back");
-const circle = document.querySelectorAll("#dataCircle");
+const circle = document.querySelectorAll(".Circle");
 const submitBtn = document.getElementById("submit");
 const returnBtn = document.getElementById("returnBtn");
 const backTxt = document.getElementById("backText");
