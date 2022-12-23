@@ -1,8 +1,6 @@
-console.log("Hello world");
-
 const front = document.getElementById("front");
 const back = document.getElementById("back");
-const circle = document.querySelectorAll(".Circle");
+const circle = document.querySelectorAll(".circle");
 const submitBtn = document.getElementById("submit");
 const returnBtn = document.getElementById("returnBtn");
 const backTxt = document.getElementById("backText");
@@ -17,13 +15,6 @@ let data;
 
 // function
 
-function updateData(btn) {
-  btn.focus();
-  let data = btn.dataset.num;
-  backTxt.textContent = `You selected ${data} of 5`;
-  console.log(backTxt);
-}
-
 function toggle() {
   front.classList.toggle("hide");
   back.classList.toggle("hide");
@@ -35,7 +26,6 @@ circle.forEach((btn) => {
     btn.focus();
     let data = btn.dataset.num;
     backTxt.textContent = `You selected ${data} of 5`;
-    console.log(backTxt);
   });
 });
 

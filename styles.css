@@ -89,17 +89,17 @@ body {
   border: none;
 }
 
-#dataCircle {
+.dataCircle {
   cursor: pointer;
   transform: 0.5s;
 }
 
-#dataCircle:hover {
+.dataCircle:hover {
   background-color: var(--primary);
   color: white;
 }
 
-#dataCircle:focus {
+.dataCircle:focus {
   color: #fff;
   background-color: var(--medium-grey);
 }
